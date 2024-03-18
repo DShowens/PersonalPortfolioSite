@@ -1,7 +1,5 @@
 // HTML element variables
-let message = document.getElementById("randomQuote1");
-let message2 = document.getElementById("randomQuote2");
-let message3 = document.getElementById("randomQuote3");
+let message = document.getElementById("randomQuote");
 let btn = document.getElementById("btn");
 
 
@@ -48,14 +46,19 @@ const movieQuote = [
 
 // function to create a random number based on the array length and return the random indexes for each into a console.log
 function randomGenerator(movie, character, movieQuote) {
-    let movieChoice = movie[(Math.floor(Math.random()*movie.length))];
-    let characterChoice = character[(Math.floor(Math.random()*character.length))];
-    let movieQuoteChoice = movieQuote[(Math.floor(Math.random()*movieQuote.length))];
+
+    let randomMovie = (Math.floor(Math.random()*movie.length));
+    let randomCharacter = (Math.floor(Math.random()*character.length));
+    let randomQuote = (Math.floor(Math.random()*movieQuote.length))
+
+    let movieChoice = movie[randomMovie];
+    let characterChoice = character[randomCharacter];
+    let movieQuoteChoice = movieQuote[randomQuote];
 
 
-    message.innerHTML = `Perhaps the movie ${movieChoice}, should have had the quote: `;
-    message2.innerHTML = movieQuoteChoice
-    message3.innerHTML = `with the character ${characterChoice} saying the line.`;
+    message.innerHTML = `Perhaps the movie ${movieChoice}, should have had the quote: `
+    + movieQuoteChoice +
+    ` with the character, ${characterChoice} (from ${movie[randomCharacter]}), saying the line.`;
 };
 
 btn.addEventListener('click', (e) => {
