@@ -1,5 +1,7 @@
 // HTML element variables
-let message = document.getElementById("randomQuote");
+let message = document.getElementById("randomQuote1");
+let message2 = document.getElementById("randomQuote2");
+let message3 = document.getElementById("randomQuote3");
 let btn = document.getElementById("btn");
 
 
@@ -32,16 +34,16 @@ const character = [
     ]
 //Array of movie quotes in order to match the characters and movies above.
 const movieQuote = [
-    "May the Force be with you.", 
-    "I'm the king of the world!",
-    "E.T. phone home.",
-    "Just keep swimming.",
-    "Roads?  Where we,re going we don't need roads.",
-    "That'll do, pig.",
-    "To infinity and beyond!",
-    "You're killing me, Smalls.",
-    "I'll be back.",
-    "I feel the need - the need for speed!"
+    `\"May the Force be with you.\"`, 
+    `\"I'm the king of the world!\"`,
+    `\"E.T. phone home.\"`,
+    `\"Just keep swimming.\"`,
+    `\"Roads?  Where we,re going we don't need roads.\"`,
+    `\"That'll do, pig.\"`,
+    `\"To infinity and beyond!\"`,
+    `\"You're killing me, Smalls.\"`,
+    `\"I'll be back.\"`,
+    `\"I feel the need - the need for speed!\"`
     ]
 
 // function to create a random number based on the array length and return the random indexes for each into a console.log
@@ -51,8 +53,9 @@ function randomGenerator(movie, character, movieQuote) {
     let movieQuoteChoice = movieQuote[(Math.floor(Math.random()*movieQuote.length))];
 
 
-    message.innerHTML = "Perhaps the movie " + movieChoice +", should have had the quote: "
-        + movieQuoteChoice + " with the character " + characterChoice + " saying the line.";
+    message.innerHTML = `Perhaps the movie ${movieChoice}, should have had the quote: `;
+    message2.innerHTML = movieQuoteChoice
+    message3.innerHTML = `with the character ${characterChoice} saying the line.`;
 };
 
 btn.addEventListener('click', (e) => {
