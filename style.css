@@ -1,3 +1,31 @@
+@media only screen and (max-width: 600px) {
+
+    .javascript-area {
+        max-width: 95%;
+
+    }
+
+    footer li {
+        display: block;
+    }
+
+    #randomQuote {
+        max-width: 100%;
+
+        
+    }
+
+    header li {
+        display: block;
+        padding: 5px;
+        background-color: rgb(169, 169, 169);;
+    }
+
+
+}
+
+
+
 * ::after ::before {
     box-sizing: border-box;
     padding: 0;
@@ -6,11 +34,11 @@
 
 html {
     background-color: rgb(213, 213, 213);
-    width: 100%;
+    scroll-padding-top: 40px;
 }
 
 main {
-    width: 100%;
+    max-width: 850px;
     margin: 0;
 
 }
@@ -44,7 +72,9 @@ header ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin: 0;
     padding: 10px;
+    background-color: rgb(169, 169, 169);;
 }
 
 header li {
@@ -61,7 +91,7 @@ header a {
 }
 
 .javascript-area {
-    width: 60%;
+    max-width: 600px;
     border-radius: 20px;
     background-color: rgb(195, 194, 194);
     margin: auto 10px;
@@ -97,12 +127,32 @@ footer {
 }
 
 footer ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
+    min-height: 20px;
+    padding: 10px 10px;
 }
 
 footer li {
+    display: inline-block;
     list-style: none;
+    min-width: 200px;
+    padding: 5px 5px;
+}
+
+header a:hover {
+    border-radius: 20px;
+    color: rgb(20, 90, 59);
+    font-weight: 600;
+}
+
+/* Page 2 styling for "more about me" portion (unique) */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+img {
+    margin: 5px 5px;
+    border-radius: 10px;
 }
