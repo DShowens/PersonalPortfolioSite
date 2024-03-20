@@ -51,6 +51,10 @@ h2 {
     font-size: 2rem;
 }
 
+.hobbies li {
+    line-height: 2rem;
+}
+
 h3 {
     font-size: 1.5rem;
     font-style:italic;
@@ -61,11 +65,24 @@ p {
     margin: auto 10px;
 }
 
+span a {
+    padding: 0px 5px 2px 5px;
+    background-color:  rgb(169, 169, 169);
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+span a:hover {
+    background-color:  rgb(20, 69, 45);
+    color: rgb(255, 255, 255);
+}
+
 header {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgb(169, 169, 169);;
+    background-color: rgb(169, 169, 169);
 }
  
 header ul {
@@ -74,7 +91,7 @@ header ul {
     width: 100%;
     margin: 0;
     padding: 10px;
-    background-color: rgb(169, 169, 169);;
+    background-color: rgb(169, 169, 169);
 }
 
 header li {

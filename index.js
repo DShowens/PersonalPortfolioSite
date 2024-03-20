@@ -15,7 +15,17 @@ const movie = [
     "Toy Story",
     "The Sandlot",
     "The Terminator",
-    "Top Gun"
+    "Top Gun",
+    "Karate Kid",
+    "The Lion King",
+    "Ratatouille",
+    "The Jungle Book",
+    "Winnie the Pooh",
+    "Lilo & Stitch",
+    "The Incredibles",
+    "Megamind",
+    "Frozen",
+    "The Next Karate Kid"
 ]
 //Array of characters in order to match the movie and movie quotes above and below.
 const character = [
@@ -28,7 +38,17 @@ const character = [
     "Buzz Lightyear",
     "Hamilton 'Ham' Porter",
     "Terminator",
-    "Maverick"
+    "Maverick",
+    "Miyagi",
+    "Rafiki",
+    "Gusteau",
+    "Bagheera",
+    "Pooh",
+    "Lilo",
+    "Edna",
+    "Megamind",
+    "Anna",
+    "Miyagi"
     ]
 //Array of movie quotes in order to match the characters and movies above.
 const movieQuote = [
@@ -41,7 +61,17 @@ const movieQuote = [
     `\"To infinity and beyond!\"`,
     `\"You're killing me, Smalls.\"`,
     `\"I'll be back.\"`,
-    `\"I feel the need - the need for speed!\"`
+    `\"I feel the need - the need for speed!\"`,
+    `\"There is no such thing as a bad student, only bad teacher.  Student does as teacher says.\"`,
+    `\"Oh yes, the past can hurt.  But, you can either run from it or, learn from it.\"`,
+    `\"If you focus on what you left behind you will never see what lies ahead.\"`,
+    `\"Things will work better in the morning.\"`,
+    `\"It's a good thing I noticed it.  Otherwise, I wouldn't have seen it.\"`,
+    `\"Ohana means family.  Family means, no one gets left behind.\"`,
+    `\"Never look back, darling.  It distracts from the now.\"`,
+    `\"Destiny is not a path given to us but a path we choose ourselves.\"`,
+    `\"True love is putting someone else before you.\"`,
+    `\"Ambition without knowledge is like a boat on dry land.\"`
     ]
 
 // function to create a random number based on the array length and return the random indexes for each into a console.log
