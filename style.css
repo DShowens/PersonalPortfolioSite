@@ -150,6 +150,7 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    margin-top: 10px;
 }
 
 img {
